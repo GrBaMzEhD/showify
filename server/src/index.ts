@@ -1,4 +1,6 @@
-import express from "express";
+import createServer from "./server";
+import { init } from "./db/db" 
 
-const app = express();
-const PORT = process.env.PORT || 3000;
+export default async () => {
+	const { app } = createServer();
+}
